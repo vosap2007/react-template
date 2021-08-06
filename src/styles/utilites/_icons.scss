@@ -1,116 +1,143 @@
-
-.icon-gear:before {
+.icon-gear::before {
+  color: #cecece;
   content: "\e91b";
-  color: #CECECE;
 }
-.icon-open-arrow:before {
-  content: "\e91c";
+
+.icon-open-arrow::before {
   color: #4d4d4d;
+  content: "\e91c";
 }
-.icon-success:before {
+
+.icon-success::before {
+  color: #fff;
   content: "\e919";
-  color: #fff;
 }
-.icon-fail:before {
+
+.icon-fail::before {
+  color: #fff;
   content: "\e91a";
-  color: #fff;
 }
-.icon-question:before {
-  content: "\e918";
+
+.icon-question::before {
   color: #ff586c;
+  content: "\e918";
 }
-.icon-pin:before {
+
+.icon-pin::before {
   content: "\e913";
 }
-.icon-arrow:before {
+
+.icon-arrow::before {
+  color: #cecece;
   content: "\e912";
-  color: #cecece;
 }
-.icon-filter-validator:before {
-  content: "\e900";
+
+.icon-filter-validator::before {
   color: #8d8d8d;
+  content: "\e900";
 }
-.icon-log-in:before {
+
+.icon-log-in::before {
+  color: #cecece;
   content: "\e901";
-  color: #cecece;
 }
-.icon-account:before {
+
+.icon-account::before {
+  color: #fff;
   content: "\e902";
-  color: #fff;
 }
-.icon-charning:before {
+
+.icon-charning::before {
+  color: #cecece;
   content: "\e903";
-  color: #cecece;
 }
-.icon-clock:before {
+
+.icon-clock::before {
+  color: #cecece;
   content: "\e904";
-  color: #cecece;
 }
-.icon-close:before {
+
+.icon-close::before {
+  color: #fff;
   content: "\e905";
-  color: #fff;
 }
-.icon-earphons:before {
+
+.icon-earphons::before {
+  color: #2ec3e9;
   content: "\e906";
-  color: #2ec3e9;
 }
-.icon-galka:before {
+
+.icon-galka::before {
+  color: #2ec3e9;
   content: "\e907";
-  color: #2ec3e9;
 }
-.icon-iconfile:before {
+
+.icon-iconfile::before {
+  color: #cecece;
   content: "\e908";
-  color: #cecece;
 }
-.icon-loop:before {
+
+.icon-loop::before {
+  color: #fff;
   content: "\e909";
-  color: #fff;
 }
-.icon-marker:before {
+
+.icon-marker::before {
+  color: #fff;
   content: "\e90a";
-  color: #fff;
 }
-.icon-plus-cir:before {
+
+.icon-plus-cir::before {
+  color: #2ec3e9;
   content: "\e90b";
-  color: #2ec3e9;
 }
-.icon-replace:before {
+
+.icon-replace::before {
+  color: #2ec3e9;
   content: "\e90c";
-  color: #2ec3e9;
 }
-.icon-schems:before {
+
+.icon-schems::before {
+  color: #cecece;
   content: "\e90d";
-  color: #cecece;
 }
-.icon-setting:before {
+
+.icon-setting::before {
+  color: #cecece;
   content: "\e90e";
-  color: #cecece;
 }
-.icon-shield-gal:before {
+
+.icon-shield-gal::before {
+  color: #cecece;
   content: "\e90f";
-  color: #cecece;
 }
-.icon-shield:before {
-  content: "\e910";
+
+.icon-shield::before {
   color: #ffae4f;
+  content: "\e910";
 }
-.icon-trash:before {
+
+.icon-trash::before {
+  color: #cecece;
   content: "\e911";
-  color: #cecece;
 }
-.icon-tree1:before {
-  content: "\e914";
+
+.icon-tree1::before {
   color: #fff;
+  content: "\e914";
 }
-.icon-users1:before {
+
+.icon-users1::before {
+  color: #cecece;
   content: "\e915";
-  color: #cecece;
 }
-.icon-vilka1:before {
+
+.icon-vilka1::before {
+  color: #cecece;
   content: "\e916";
-  color: #cecece;
 }
-.icon-warning1:before {
-  content: "\e917";
+
+.icon-warning1::before {
   color: #ff6c58;
+  content: "\e917";
 }
