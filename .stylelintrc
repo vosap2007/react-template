@@ -1,7 +1,9 @@
 {
   "extends": [
     "stylelint-config-rational-order",
-    "stylelint-prettier/recommended"
+    "stylelint-prettier/recommended",
+    "stylelint-config-standard",
+    "stylelint-order-config-standard"
   ],
   "plugins": [
     "stylelint-order",
@@ -460,9 +462,6 @@
         "unspecified": "bottomAlphabetical"
       }
     ],
-    "at-rule-blacklist": [
-      "extend"
-    ],
     "at-rule-empty-line-before": [
       "always",
       {
@@ -509,7 +508,7 @@
     "block-opening-brace-newline-before": "never-single-line",
     "block-opening-brace-space-after": "always-single-line",
     "block-opening-brace-space-before": "always",
-    "color-hex-case": "lower",
+    "color-hex-case": "upper",
     "color-hex-length": "short",
     "color-named": "never",
     "color-no-hex": null,
@@ -699,16 +698,6 @@
     "string-no-newline": true,
     "string-quotes": "double",
     "time-min-milliseconds": 10,
-    "unit-blacklist": [
-      "ch",
-      "cm",
-      "ex",
-      "in",
-      "mm",
-      "pc",
-      "pt",
-      "q"
-    ],
     "unit-case": "lower",
     "unit-no-unknown": true,
     "unit-whitelist": null,
