@@ -1,4 +1,9 @@
 import React from 'react';
-const Home = () => <h1>Home</h1>;
+import { useDebugLog } from '../../hooks';
+const Home = () => {
+  useDebugLog('dsdasdas');
+
+  return <h1>Home</h1>;
+};
 
 export default Home;
