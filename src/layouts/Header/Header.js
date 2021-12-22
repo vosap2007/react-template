@@ -1,4 +1,9 @@
 import React from 'react';
-const Header = () => <h1>Header</h1>;
+const Header = () => (
+  <>
+    <h1>Header</h1>
+    <button type="button">Hello!</button>
+  </>
+);
 
 export default Header;
