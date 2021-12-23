@@ -14,7 +14,7 @@ const Home = () => (
           </Nav.Link>
         </Nav>
       </div>
-      <div className="col-md-10 col_downloads">
+      <div className="col-md-10 col_downloads bg-light">
         <Table responsive="sm">
           <thead>
             <tr>
