@@ -1,6 +1,8 @@
 /* eslint-disable */
 import React from 'react';
-import {Navbar, Container, Nav, Button} from 'react-bootstrap';
+import Select from '../../components/Select/Select';
+import ThemeButton from '../../components/ThemeButton/ThemeButton';
+import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 
 const Header = () => {
   return (
@@ -12,7 +14,11 @@ const Header = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
           </Nav>
-          <Button variant="primary">Connect to Wallet</Button>{' '}
+          <Button variant="primary" className="mr-3">
+            Connect to Wallet
+          </Button>{' '}
+          <ThemeButton></ThemeButton>
+          <Select></Select>
         </Container>
       </Navbar>
     </>
