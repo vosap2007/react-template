@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { createContext, useReducer } from 'react';
 
 export const State = (initialState, prefix) => {

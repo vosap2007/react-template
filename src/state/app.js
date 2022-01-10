@@ -25,14 +25,14 @@ export const { appStore, AppProvider } = State(initialState, 'app');
 
 export const onAppMount =
   () =>
-  async ({ update, getState, dispatch }) => {
+  async ({ update, dispatch }) => {
     update('app', { mounted: true });
     dispatch(initNear());
   };
 
 export const snackAttack =
   (msg) =>
-  async ({ update, getState, dispatch }) => {
+  async ({ update }) => {
     console.log('Snacking on:', msg);
     update('app.snack', msg);
     if (snackTimeout) clearTimeout(snackTimeout);

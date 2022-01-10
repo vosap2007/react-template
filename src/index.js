@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import Main from './Main';
+// eslint-disable-next-line import/no-named-as-default-member
 import reportWebVitals from './reportWebVitals';
+import { AppProvider } from './state/app';
+import Main from './Main';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Main />
-  </BrowserRouter>,
+  <AppProvider>
+    <BrowserRouter>
+      <Main />
+    </BrowserRouter>
+  </AppProvider>,
   document.getElementById('root'),
 );
 

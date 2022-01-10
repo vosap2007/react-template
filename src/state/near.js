@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React from 'react';
 import * as nearAPI from 'near-api-js';
 import getConfig from '../config';
-import { getWallet, postSignedJson } from '../utils/near-utils';
+import { getWallet } from '../utils/near-utils';
 
 export const {
   GAS,
@@ -23,13 +24,13 @@ export const {
 
 export const initNear =
   () =>
-  async ({ update, getState, dispatch }) => {
+  async ({ update }) => {
     const { near, wallet, contractAccount } = await getWallet();
 
     wallet.signIn = () => {
       wallet.requestSignIn(contractId, 'Blah Blah');
     };
-    const signOut = wallet.signOut;
+    const { signOut } = wallet;
     wallet.signOut = () => {
       signOut.call(wallet);
       update('wallet.signedIn', false);
@@ -72,15 +73,17 @@ export const token2symbol = {
 
 const allTokens = Object.keys(token2symbol);
 
-export const getTokenOptions = (value, setter, accepted = allTokens) => (
-  <select value={value} onChange={(e) => setter(e.target.value)}>
-    {accepted.map((value) => (
-      <option key={value} value={value}>
-        {token2symbol[value]}
-      </option>
-    ))}
-  </select>
-);
+// TODO curently unused
+
+// export const getTokenOptions = (value, setter, accepted = allTokens) => (
+//   <select value={value} onChange={(e) => setter(e.target.value)}>
+//     {accepted.map((val) => (
+//       <option key={val} value={val}>
+//         {token2symbol[value]}
+//       </option>
+//     ))}
+//   </select>
+// );
 
 export const handleOffer = async (
   account,

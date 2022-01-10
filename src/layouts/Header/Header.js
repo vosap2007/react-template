@@ -1,11 +1,16 @@
 /* eslint-disable */
-import React from 'react';
+import React, {useContext} from 'react';
 import Select from '../../components/Select/Select';
 import ThemeButton from '../../components/ThemeButton/ThemeButton';
+import {appStore, onAppMount} from '../../state/app';
 import {Wallet} from '../../components/Wallet/Wallets';
 import {Navbar, Container, Nav, Button} from 'react-bootstrap';
 
 const Header = () => {
+  const {state} = useContext(appStore);
+
+  const {wallet} = state;
+
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -15,7 +20,7 @@ const Header = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
           </Nav>
-          <Wallet></Wallet>
+          <Wallet wallet={wallet} handleClose={() => {}} />
           <Button variant="primary" className="mr-3">
             Connect to Wallet
           </Button>{' '}

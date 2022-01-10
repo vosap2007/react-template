@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as nearAPI from 'near-api-js';
 import getConfig from '../config';
 

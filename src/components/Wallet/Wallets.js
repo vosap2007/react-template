@@ -1,17 +1,17 @@
 /* eslint-disable */
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import * as nearAPI from 'near-api-js';
-import {updateWallet} from '../../state/near';
-import {getContract, contractMethods, GAS} from '../../utils/near-utils';
+import { updateWallet } from '../../state/near';
+import { getContract, contractMethods, GAS } from '../../utils/near-utils';
 const {
   KeyPair,
   utils: {
     PublicKey,
-    format: {formatNearAmount},
+    format: { formatNearAmount },
   },
 } = nearAPI;
 
-export const Wallet = ({wallet, handleClose}) => {
+export const Wallet = ({ wallet, handleClose }) => {
   const [accountId, setAccountId] = useState('');
   const [proceeds, setProceeds] = useState('0');
 
